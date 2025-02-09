@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>FastWebChat</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FastWebChat<i class="bi bi-chat-dots-fill ms-2"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acercade.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <img src="img/img_fondo.png"
+             class="img-fluid w-100"
+             style="display: block; margin-top: 56px;"
+             alt="Imagen responsive">
+    </div>
+
+
+    <div class="container mt-5 flex-grow-1">
+
+        <div class="container mt-1 text-center">
+            <h2 class="fw-bold">¿Qué es FastWebChat?<i class="bi bi-chat-dots-fill ms-2"></i></h2>
+        </div>
+
+        <div class="container mt-3">
+            <p class="text-center text-lg-start">
+                FastWebChat es una plataforma de mensajería en tiempo real diseñada para ofrecer una comunicación fluida,
+                rápida y eficiente entre los usuarios. Nuestra aplicación permite enviar y recibir mensajes instantáneamente,
+                con una interfaz amigable y fácil de usar.
+            </p>
+            <p class="text-center text-lg-start">
+                Gracias a la tecnología WebSockets, FastWebChat ofrece una experiencia en tiempo real sin necesidad de
+                recargas constantes en la página. Esto permite conversaciones dinámicas, ideales para cualquier tipo de
+                interacción.
+            </p>
+            <p class="fst-italic text-center">"La forma más rápida y fácil de conectar con los demás."</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+        &copy; 2025 FastWebChat. Todos los derechos reservados.
+    </footer>
+
+    <script src="chat.js"></script>
+</body>
+</html>

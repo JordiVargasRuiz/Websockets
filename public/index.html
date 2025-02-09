@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>FastWebChat</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FastWebChat<i class="bi bi-chat-dots-fill ms-2"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acercade.html">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+        <div id="jordi-chat" class="container p-4 bg-white shadow rounded">
+            <h2 class="text-center text-dark d-flex justify-content-center align-items-center">
+                FastWebChat <i class="bi bi-chat-dots-fill ms-2"></i>
+            </h2>
+
+            <div id="chat-window" class="border rounded p-3 mb-3 overflow-auto" style="height: 300px;">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+
+            <div class="mb-3">
+                <input id="handle" type="text" class="form-control" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="mb-3">
+                <input id="message" type="text" class="form-control" placeholder="Escribe un mensaje">
+            </div>
+
+            <button id="send" class="btn btn-dark w-100">Enviar</button>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2025 FastWebChat. Todos los derechos reservados.
+    </footer>
+
+    <script src="chat.js"></script>
+</body>
+
+</html>
