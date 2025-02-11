@@ -1,5 +1,5 @@
 // Make connection
-var socket = io.connect('https://fastwebchat-79ab091e9149.herokuapp.com');
+var socket = io.connect('https://fastwebchat-484ab2d0e314.herokuapp.com/');
 
 // Query DOM
 var message = document.getElementById('message');
