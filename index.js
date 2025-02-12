@@ -6,7 +6,6 @@ var cors = require('cors');
 var app = express();
 var PORT = process.env.PORT || 4000;
 
-// Habilitar CORS solo para el dominio de tu aplicación en Heroku
 app.use(cors({
     origin: "https://fastweb-29361be2e352.herokuapp.com",
     methods: ["GET", "POST"]
@@ -16,10 +15,8 @@ var server = app.listen(PORT, function () {
     console.log(`Listening for requests on port ${PORT}`);
 });
 
-// Servir archivos estáticos
 app.use(express.static('public'));
 
-// Configurar Socket.io con CORS permitido solo para Heroku
 var io = socket(server, {
     cors: {
         origin: "https://fastweb-29361be2e352.herokuapp.com",
